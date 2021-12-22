@@ -10,22 +10,19 @@ body{
     background-image: linear-gradient(to right, rgba(255, 153, 0, 0.65) 0%, rgba(255, 30, 0, 0.65) 100%), url("images/bg.jpg");
     background-size: cover;
     height: 970px;
-}
-
-header{
     margin-left:15%;
     margin-right: 15%;
 }
+
+
 
 .main-content{
     background:white;
     border-radius: 15px;
     margin-top: 5%;
     height:3713px;
-}
-
-section{
-    height:970px;
+    margin-left:15%;
+    margin-right: 15%;
 }
 
 img.bw{
@@ -61,13 +58,13 @@ img.bw:hover{
 
 nav{
     position: relative;
-    z-index:1;
 }
 
 #ct3{
     position: relative;
-    top:450px;
+    top:400px;
 }
+
 
 #third-pg{
     position:relative;
@@ -79,6 +76,7 @@ nav{
 }
 
 #first-pg{
+    z-index:0;
     position:relative;
     top:-120px;
 }
@@ -134,16 +132,17 @@ nav{
 
 .positioning{
     position: relative;
-    top:370px;
+    top:300px;
 }
 
 .parallax {
     position: relative;
-    top:500px;
+    top:380px;
     background-image: url("images/bg.jpg");
     background-image: -webkit-gradient(linear, left , right, from(rgba(255, 153, 0, 0.65)), to(rgba(255, 30, 0, 0.65))), url("images/bg.jpg") ;
     background-image: linear-gradient(to right, rgba(255, 153, 0, 0.65) 0%, rgba(255, 30, 0, 0.65) 100%), url("images/bg.jpg");
-    min-height: 600px; 
+    height: 600px; 
+    width:100%;
     border-radius: 10px;
     background-attachment: fixed;
     background-position: center;
@@ -168,7 +167,7 @@ nav{
     }
     .main-content .positioning{
         position: relative;
-        top:500px;
+        top:400px;
     }
     .main-content #first-pg{
         position: relative;
@@ -179,9 +178,13 @@ nav{
         top:200px;
     }
     .parallax{
-        font-size:5px;
-        top:1050px;
-        min-height: 1150px; 
+        position: absolute;
+        top:120%;
+        min-height: 1200px;
+    }
+    #ct2{
+        position: relative;
+        top:-540px;
     }
     #ct2 .row #services{
         line-height: 10px;
@@ -195,11 +198,13 @@ nav{
     #ct2 .row #services h4{
         font-size:20px;
     }
-    #ct3 .sizing #offers i{
-        font-size: 5px;
+    #third-pg{
+        position:relative;
+        top:-320px;
     }
-    #ct3 .sizing #offers span{
-        font-size: 1px;
+    #ct3{
+        position: relative;
+        top:-200px;
     }
     
 }
@@ -239,9 +244,13 @@ nav{
     #first-pg .first-paragraph-text p{
         font-size: 15px;
     }
-    header{
-        margin-left:5%;
-        margin-right: 5%;
+}
+
+@media screen and (max-width:767px)
+{
+    .parallax {
+        position: relative;
+        top:500px;
     }
 }
 
