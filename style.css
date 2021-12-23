@@ -20,7 +20,7 @@ body{
     background:white;
     border-radius: 15px;
     margin-top: 5%;
-    height:3713px;
+    height:5113px;
     margin-left:15%;
     margin-right: 15%;
 }
@@ -68,7 +68,7 @@ nav{
 
 #third-pg{
     position:relative;
-    top:220px;
+    top:250px;
 }
 
 #third-pg .second-paragraph span{
@@ -111,6 +111,10 @@ nav{
     white-space: unset;
 }
 
+.fourth-paragraph .text-truncate{
+    white-space: unset;
+}
+
 .text-truncate{
     white-space: unset;
 }
@@ -135,6 +139,15 @@ nav{
     top:300px;
 }
 
+#fourth-pg{
+    position:relative;
+    top:500px;
+}
+
+#fourth-pg .second-paragraph span{
+    color:#eb4034;
+}
+
 .parallax {
     position: relative;
     top:380px;
@@ -155,15 +168,57 @@ nav{
     display: flex;
 }
 
+#ct2 #sizing #services i{
+    font-size:40px;
+}
+
+#ct2 #sizing #services span{
+    font-size:33px;
+}
+
+#fifth-paragraph{
+    position: relative;
+    top:650px;
+}
+
+#fifth-paragraph .row .camera h3{
+    font-size: 26px;
+    font-weight: bold;
+}
+#fifth-paragraph .row .camera p{
+    font-size: 16px;
+    font-style: italic;
+}
+
+#fifth-paragraph .row .mainrow i{
+    font-size: 40px;
+}
+
+#fifth-paragraph .row .mainrow h3{
+    font-weight: bold;
+}
+
+#fifth-paragraph .row .mainrow p{
+    font-style: italic;
+}
+
 .main-content{
     -webkit-box-shadow: 0px 0px 12px 7px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 0px 12px 7px rgba(0,0,0,0.35);
     box-shadow: 0px 0px 12px 7px rgba(0,0,0,0.35);
 }
 
+#fifth-paragraph .row .mainrow .scd .photo .camera h3 span{
+   color:#eb4034;
+}
+#fifth-paragraph .row2 .mainrow .scd .photo .profile-picture h3 span{
+    color:#eb4034;
+}
+
 @media screen and (max-width:575px){
-    .main-content{
-        height:6100px;
+    #fifth-paragraph .row .mainrow .camera img{
+        height:370px;
+        width:280px;
     }
     .main-content .positioning{
         position: relative;
@@ -198,6 +253,15 @@ nav{
     #ct2 .row #services h4{
         font-size:20px;
     }
+
+    #ct2 #sizing #services i{
+        font-size:35px;
+    }
+
+    #ct2 #sizing #services span{
+        font-size:27px;
+    }
+
     #third-pg{
         position:relative;
         top:-320px;
@@ -206,10 +270,51 @@ nav{
         position: relative;
         top:-200px;
     }
-    
+    #fourth-pg{
+        position:relative;
+        top:-150px;
+    }
+    #fifth-paragraph .row .mainrow .scd .photo .profile-picture img{
+        height:370px;
+        width:280px;
+    }
+    #fifth-paragraph{
+        position: relative;
+        top:0px;
+    }
 }
+
+@media screen and (max-width:425px)
+{
+    #fifth-paragraph .row .mainrow .scd .photo .camera h3{
+        font-size: 20px;
+    }
+    #fifth-paragraph .row2 .mainrow .scd .photo .profile-picture h3{
+        font-size: 20px;
+    }
+    #fifth-paragraph .row2 .mainrow .scd .photo .profile-picture p{
+        font-size: 16px;
+    }
+    #fifth-paragraph .row .mainrow .camera img{
+        height:300px;
+        width:200px;
+    }
+    #fifth-paragraph .row .mainrow .scd .photo .profile-picture img{
+        height:300px;
+        width:200px;
+    }
+    .main-content{
+        height:10100px;
+    }
+}
+
+
 @media screen and (max-width:992px)
 {
+    /*
+    #fifth-paragraph .row2 .mainrow .scd .photo .camera{
+       
+    }*/
     #first-pg{
         position:relative;
         top:0px;
@@ -248,6 +353,9 @@ nav{
 
 @media screen and (max-width:767px)
 {
+    .main-content{
+        height:7113px;
+    }
     .parallax {
         position: relative;
         top:500px;
@@ -272,6 +380,14 @@ nav{
         top:25%;
     }
 }
+
+@media screen and (max-width:589px)
+{
+    .main-content{
+        height:8013px;
+    }
+}
+
 @media screen and (max-width:529px)
 {
     #first-pg .first-paragraph-text{
@@ -291,6 +407,29 @@ nav{
     }
 }
 
+
+@media screen and (max-width:340px)
+{
+    #fifth-paragraph .row .mainrow .camera img{
+        height:250px;
+        width:150px;
+    }
+    #fifth-paragraph .row .mainrow .scd .photo .camera h3{
+        font-size: 20px;
+    }
+    #fifth-paragraph .row .mainrow .scd .photo .camera p{
+        font-size: 17px;
+    }
+    #fifth-paragraph .row .mainrow .scd .photo .profile-picture img{
+        height:250px;
+        width:150px;
+    }
+    #fifth-paragraph{
+        position: relative;
+        top:0px;
+    }
+}
+
 @media screen and (max-width:375px)
 {
     #first-pg img{
@@ -305,6 +444,20 @@ nav{
         top:130%;
         width:100%;
         text-align: center;
+    }
+    .main-content{
+        height:13713px;
+    }
+
+}
+
+@media screen and (max-width:500px)
+{
+    .main-content .fourth-paragraph .second-paragraph h2{
+        font-size: 23px;
+    }
+    .main-content .fourth-paragraph .second-paragraph p{
+        font-size: 16px;
     }
 }
 
